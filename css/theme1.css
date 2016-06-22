@@ -1,0 +1,296 @@
+.left{
+    width: 65%;
+    float: left;
+}
+.right{
+    width: 35%;
+    float: right;
+}
+.image{
+    border: solid #F0F0F0 1px;
+    width: 100%;
+    margin: 0;
+}
+.allimg{
+    width: 70%;
+    margin: 0 auto;
+    padding: 0;
+}
+.right-title{
+    display: block;
+    font-size: 25px;
+    margin-left: 40px;
+    font-weight:normal;/*无效*/
+}
+.right-content{
+    background-color: #E1F0FB;
+    height: 200px;
+    margin-bottom:20px;
+    margin-top: 20px;
+}
+.btn1{
+    margin-left: 20px;
+
+}
+.title{
+    margin-left: 20px;
+}
+.code{
+    margin-top:20px;
+}
+.left-content{
+    margin-left: 20px;
+}
+.left-text{
+    margin-bottom: 50px;
+}
+#header{
+	position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 45px;
+    background: #017ECC;
+    z-index: 999
+}
+body{
+	background: #fff
+}
+.header, .footer {
+    min-height: 49px;
+    padding: 0 15px;
+}
+#header .branding {
+    width: 250px;
+    height: 45px;
+    float: left;
+    padding: 0 15px;
+}
+#header .branding h4{
+	color: #fff;
+	font-weight: 400
+}
+.page {
+    padding: 20px;
+}
+.wrapper {
+    padding: 20px;
+}
+.form-horizontal .control-label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: right;
+}
+.panel .table thead>tr>th {
+    border-bottom: 1px solid #dee5e7;
+}
+.panel .table-striped>thead th {
+    background: #fff;
+    border-right: 1px solid #f1f1f1;
+}
+.panel .table {
+	font-size: 14px
+}
+.panel .table-striped>thead th:last-child {
+    border-right: none;
+}
+.m-t-sm{
+	margin-top: 5px
+}
+/*nav*/
+nav{
+	display: block;
+}
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.nav>li {
+    position: relative;
+    display: block;
+}
+.bg-dark .nav>li>a {
+    color: #adbece;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 25px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    color: #333;
+}
+.tab-close{
+    float: right;
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    font-size: 10px !important;
+    color: #666;
+}
+/*.tab-block.nav-tabs > li.active > a {
+    margin-top: -1px;
+    border-top: 2px solid #4a89dc;
+}*/
+.tab-block.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+}
+.tab-block.nav-tabs > li.active > a, 
+.tab-block.nav-tabs > li.active > a:hover, 
+.tab-block.nav-tabs > li.active > a:focus {
+    cursor: default;
+    position: relative;
+    z-index: 12;
+    color: #4a89dc;
+    background: #FFF;
+    border-color: #e5e5e5;
+    border-bottom: 1px solid #FFF;
+}
+.tab-block.nav-tabs > li > a {
+    position: relative;
+    z-index: 9;
+    padding: 9px 16px;
+    margin-right: -1px;
+    font-weight: 600;
+    color: #777;
+    border-color: #e5e5e5;
+    border-radius: 0;
+    background: #fafafa;
+    min-width: 100px;
+    text-align: center;
+    
+}
+/*在线审核*/
+.pa10 {
+    padding: 10px;
+}
+.row {
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-top: -10px;
+}
+.pag2-left{
+    float: left;
+    width: 20%;
+    overflow: auto;
+}
+.pag2-right{
+    float: right;
+    width: 80%;
+    overflow: hidden;
+}
+code{
+    background-color: #FAFAFA;
+    display: block;
+    width: 100%;
+    border: 1px solid lightgray;
+    background-color: #FAFAFA;
+    border-radius: 5px;
+    padding:0;
+    overflow: auto;
+    word-wrap: normal;
+    line-height: 2em;
+    white-space: nowrap;
+    color: black;
+     }
+code .title{
+    color: #4E4EB1;
+    margin-left: 0px;
+     }
+code .attribute{
+    color: #008080;
+     }
+code .value{
+    color: #DD1144;
+    margin-left: -5px;
+     }
+code .note{
+    color: #999992;
+}
+.keyword{
+    color: #333;
+    font-weight: bold;
+}
+
+.panel-body{
+    width: 100%;
+}
+.panel-body a{
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+.panel-body a:hover{
+    background-color: #F5F5F5;
+}
+.model1{
+    width:93%;
+    margin: 0 auto;
+}
+.m1-title{
+    color: #636363;
+}
+.table{
+    border: 1px solid #DDDDDD;
+}
+.thead1 td{
+    background-color: #017ECC;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.m1-bl{
+    margin-top: 25px;
+}
+.daohang{
+    padding-left: 26px;
+}
+.pag4-text{
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.pag4-img img{
+    width: 194px;
+    height: 132px;
+    margin: 10px;
+}
+#Se-model3,#Se-model4{
+    border: 1px solid #F5F5F5;
+    padding: 0;
+    display: block;
+}
+.row a{
+    text-decoration: none;
+}
+#Se-model3:hover,#Se-model4:hover{
+    border: 1px solid #CCCCCC;
+}
+.pag5-img{
+    width: 194px;
+    height: 132px;
+    display: block;
+    float: right;
+}
+.p5-left{
+    float: left;
+    margin-bottom: 30px;
+}
+.ccp{
+
+-webkit-animation: myfirst 5s linear 5s infinite alternate;}
+.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}
+@-webkit-keyframes bounceInRight{0%{opacity:0;-webkit-transform:translateX(2000px);transform:translateX(2000px)}60%{opacity:1;-webkit-transform:translateX(-30px);transform:translateX(-30px)}80%{-webkit-transform:translateX(10px);transform:translateX(10px)}100%{-webkit-transform:translateX(0);transform:translateX(0)}}
+@-webkit-keyframes bounceOutLeft{0%{-webkit-transform:translateX(0);transform:translateX(0)}20%{opacity:1;-webkit-transform:translateX(20px);transform:translateX(20px)}100%{opacity:0;-webkit-transform:translateX(-2000px);transform:translateX(-2000px)}}
+.bounceInRight{-webkit-animation-name:bounceInRight;animation-name:bounceInRight}
+@-webkit-keyframes bounceInLeft{0%{opacity:0;-webkit-transform:translateX(-2000px);transform:translateX(-2000px)}60%{opacity:1;-webkit-transform:translateX(30px);transform:translateX(30px)}80%{-webkit-transform:translateX(-10px);transform:translateX(-10px)}100%{-webkit-transform:translateX(0);transform:translateX(0)}}@keyframes bounceInLeft{0%{opacity:0;-webkit-transform:translateX(-2000px);-ms-transform:translateX(-2000px);transform:translateX(-2000px)}60%{opacity:1;-webkit-transform:translateX(30px);-ms-transform:translateX(30px);transform:translateX(30px)}80%{-webkit-transform:translateX(-10px);-ms-transform:translateX(-10px);transform:translateX(-10px)}100%{-webkit-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0)}}
+.bounceInLeft{-webkit-animation-name:bounceInLeft;animation-name:bounceInLeft}

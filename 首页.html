@@ -1,0 +1,605 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>设计方案</title>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/API.js"></script>
+    <link rel="stylesheet" href="css/basicPlatform.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/theme1.css" type="text/css">
+    <link rel="stylesheet" href="Font-Awesome-3.2.1/css/font-awesome.min.css">
+</head>
+
+<body>
+<!--head-->
+<section id="header">
+    <header class="clearfix">
+        <div class="branding scheme-cyan">
+            <h4><i class="fa fa-flag"></i> 工具管理</h4>
+        </div>
+    </header>
+</section>
+<!--/ head-->
+
+
+<!--right-->
+
+<div class="page page-ui-tree">       
+</div>
+<section class="wrapper" style="padding-top:0">
+  <ul  id="myTab" class="tab-block nav nav-tabs">
+      <li class="active"><a href="#tab1" data-toggle="tab">Home</a></li>
+      <li ><a href="#tab2" data-toggle="tab">API Reference<i class="fa fa-close tab-close " style="display:none"></i></a></li>
+      <li ><a href="#tab3" data-toggle="tab">SampleCode<i class="fa fa-close tab-close " style="display:none"></i></a></li>           
+  </ul>
+  <div id="myTabContent" class="tab-content m-t-sm">
+    <div  class="tab-pane fade in active" id="tab1">
+      <section class="panel panel-default">
+          <header class="panel-heading">
+            <i class="icon-home"></i>&nbspHome
+          </header>
+          <div class="row pa10">
+            <div class="left">
+              <div class="left-content">
+                <div class="left-text">
+                  <h2 class="title">Build Compelling 2D Web Mapping Apps</h2>
+                    The ArcGIS API for JavaScript is designed to maximize your productivity for building engaging, beautiful web mapping applications. The API combines modern web technology and powerful geospatial capabilities enabling you to create high-performing apps and smarter visualizations of your data. 
+                </div>
+                <div class="left-text">
+                  <h2 class="title">Use the API</h2>
+                    Reference the ArcGIS JavaScript API from our CDN and you are ready to get started: 
+                  <div class="code">
+                   <code>
+                    <span>
+                      <<span class="title">link</span>
+                      <span class="attribute">rel</span>=
+                      <span class="value">"stylesheet"</span>
+                      <span class="attribute">href</span>=
+                      <span class="value">"https://js.arcgis.com/3.16/esri/css/esri.css"</span>>
+                    </span>
+                      </br>
+                    <span>
+                     <<span class="title">script</span>
+                      <span class="attribute">src</span>=
+                      <span class="value">"https://js.arcgis.com/3.16/"</span>>
+                    </span>
+                    <span>
+                     <<span class="title">script</span>>
+                    </span>
+                   </code>
+                  </div>
+                </div>
+                <div class="map left-text">
+                  <h2 class="title">地图</h2>
+                  <iframe src="./HelloWorld.Html" frameBorder=1 height=200 width=100% scrolling=no></iframe>
+                  <div class="code">
+                    <code>require([
+                      <span class="value">"esri/map"</span>, 
+                      <span class="value">"dojo/domReady!"</span>], 
+                      <span class="keyword">function</span>&nbsp; (Map)&nbsp;{
+                      <br/>
+                      &nbsp;&nbsp;<span class="keyword">var</span> map = 
+                      <span class="keyword">new</span> Map&nbsp;(
+                      <span class="value">"map"</span>,{
+                      <br/>&nbsp;&nbsp;&nbsp;&nbsp;center: [-
+                      <span class="attribute">118</span>, 
+                      <span class="attribute">34.5</span>], 
+                      <br/>&nbsp;&nbsp;&nbsp;&nbsp;zoom: 
+                      <span class="attribute">8</span>, 
+                      <br/>&nbsp;&nbsp;&nbsp;&nbsp;basemap: 
+                      <span class="value">"topo"</span>
+                      <br/>&nbsp;&nbsp;});
+                      <br/>});
+                    </code>
+                  </div>
+                </div>
+                    
+              </div>
+            </div>
+            <div class="right">
+              <div class="allimg">
+                <div class="right-content">
+                  <span class="right-title">Version 4.0</span>
+                  <button type="button" class="btn btn-info btn1">Go to 4.0</button>
+                </div>
+                <div class="thumbnail">
+                  <img src="image/pic1.jpg" alt="..." class="image">
+                  <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>...</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                  </div>
+                </div>
+                <div class="thumbnail">
+                  <img src="image/pic2.jpg" alt="..." class="image">
+                  <div class="caption">
+                    <h3>Thumbnail label</h3>
+                    <p>...</p>
+                    <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                  </div>
+                </div>
+                <div class="thumbnail">
+                  <img src="image/pic3.jpg" alt="..." class="image">
+                  <div class="caption">
+                      <h3>Thumbnail label</h3>
+                      <p>...</p>
+                      <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                  </div>
+                </div>
+                <div class="thumbnail">
+                  <img src="image/pic4.jpg" alt="..." class="image">
+                  <div class="caption">
+                      <h3>Thumbnail label</h3>
+                      <p>...</p>
+                      <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                  </div>
+                </div>
+
+              </div>
+            </div>  
+          </div>
+      </section>
+    </div>
+
+    <div  class="tab-pane fade in active tab2" id="tab2" >
+      <section class="panel panel-default">
+          <header class="panel-heading">
+            <i class="icon-book"></i>&nbspAPI Reference
+          </header>
+          <div class="row pa10">
+            <div class="pag2-left">
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      esri
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      <a href="#" id="model1" class="daohang" fileSrc="model1.html">units</a>
+                      <a href="#" id="model2" class="daohang" fileSrc="model2.html">other</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingTwo">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      esri/arcgis
+                      </a>
+                    </h4><!-- 没有对齐 -->
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="panel-body">
+                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="headingThree">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      esri/dijit
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading4">
+                    <h4 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                      esri/dijit/analysis
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="Se-heading5">
+                    <h4 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#Se-collapse5" aria-expanded="false" aria-controls="Se-collapse5">
+                      esri/dijit/editing
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="Se-collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="Se-heading5">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="Se-heading6">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#Se-collapse6" aria-expanded="false" aria-controls="Se-collapse6">
+                      esri/dijit/geoenrichment
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="Se-collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="Se-heading6">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="Se-heading7">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#Se-collapse7" aria-expanded="false" aria-controls="Se-collapse7">
+                      esri/dijit/util
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="Se-collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="Se-heading7">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="Se-heading8">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#Se-collapse8" aria-expanded="false" aria-controls="Se-collapse8">
+                      esri/geometry
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="Se-collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="Se-heading8">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="Se-heading9">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#Se-collapse9" aria-expanded="false" aria-controls="Se-collapse9">
+                      esri/layers
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="Se-collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="Se-heading9">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="Se-heading10">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#Se-collapse10" aria-expanded="false" aria-controls="Se-collapse10">
+                      esri/opsdashboard
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="Se-collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="Se-heading10">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="Se-heading11">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#Se-collapse11" aria-expanded="false" aria-controls="Se-collapse11">
+                      esri/plugins
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="Se-collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="Se-heading11">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="Se-heading12">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#Se-collapse12" aria-expanded="false" aria-controls="Se-collapse12">
+                      esri/process
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="Se-collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="Se-heading12">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="Se-heading13">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#Se-collapse13" aria-expanded="false" aria-controls="Se-collapse13">
+                      esri/renderers
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="Se-collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="Se-heading13">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="Se-heading14">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#Se-collapse14" aria-expanded="false" aria-controls="Se-collapse14">
+                      esri/styles
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="Se-collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="Se-heading14">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="Se-heading15">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#Se-collapse15" aria-expanded="false" aria-controls="Se-collapse15">
+                      esri/symbols
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="Se-collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="Se-heading15">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pag2-right" id="pag2">
+            </div>
+          </div>
+      </section>
+    </div>
+    <div  class="tab-pane fade in active tab3" id="tab3" >
+      <section class="panel panel-default">
+          <header class="panel-heading">
+            <i class="icon-th"></i>&nbspSample Code
+          </header>
+          <div class="row pa10">
+            <div class="pag2-left">
+              <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"><!-- id重复了可以吗 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="Se-headingOne">
+                    <h4 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#Se-collapseOne" aria-expanded="false" aria-controls="Se-collapseOne" id="Se-model1" fileSrc="pag4.html">
+                      地图示例
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="Se-collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="Se-headingOne">
+                    <div class="panel-body">
+                      <a href="#" id="Se-model2" class="daohang" fileSrc="pag5.html">地图展示</a>
+                      <a href="#" class="daohang" fileSrc="">设置地图显示范围</a>
+                      <a href="#" class="daohang" fileSrc="">获取地图显示范围</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="Se-headingTwo">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#Se-collapseTwo" aria-expanded="false" aria-controls="Se-collapseTwo">
+                      地图控件显示
+                      </a>
+                    </h4><!-- 没有对齐 -->
+                  </div>
+                  <div id="Se-collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="Se-headingTwo">
+                    <div class="panel-body">
+                     Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="Se-headingThree">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#Se-collapseThree" aria-expanded="false" aria-controls="Se-collapseThree">
+                      覆盖物显示
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="Se-collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="Se-headingThree">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="Se-heading4">
+                    <h4 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#Se-collapse4" aria-expanded="false" aria-controls="Se-collapse4">
+                      esri/dijit/analysis
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="Se-collapse4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="Se-heading4">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading5">
+                    <h4 class="panel-title">
+                      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                      esri/dijit/editing
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading6">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                      esri/dijit/geoenrichment
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading7">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                      esri/dijit/util
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading7">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading8">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                      esri/geometry
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading9">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                      esri/layers
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading10">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                      esri/opsdashboard
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading11">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                      esri/plugins
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading12">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                      esri/process
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading13">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                      esri/renderers
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading14">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                      esri/styles
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading14">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading" role="tab" id="heading15">
+                    <h4 class="panel-title">
+                      <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                      esri/symbols
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading15">
+                    <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pag2-right" id="pag3">
+            </div>
+          </div>
+      </section>
+    </div>                
+  </div>
+</section>
+
+
+
+</body>
+</html>
